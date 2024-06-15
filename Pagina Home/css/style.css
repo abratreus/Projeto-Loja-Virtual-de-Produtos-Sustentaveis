@@ -1,0 +1,21 @@
+/* classe geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+/* Variaveis das Cores */
+:root {
+    --color: #034159;
+    --color0: #025951;
+    --color1: #02735E;
+    --color2: #038C3E;
+    --color3: #0CF25D;;
+}
+/* Barra de Navegação */
+nav {
+    background-color: #0CF25D;
+    max-height: 10vh;
+}
+/* logo */
+
