@@ -5,40 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap</title>
+  <title>Power Of Free</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- Navegação -->
-  <nav class="navbar navbar-expand-lg position-relative fixed-top">
-    <div class="container-fluid ">
-      <!-- logo -->
-      <a class="navbar-brand" href="#">
-        <figure class="">
+  <nav class="navbar fixed-top navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <figure>
           <img src="./css/image/logo_projeto-removebg-preview-removebg-preview.png" alt="logo-lampada"
             class="logo position-absolute top-55 start-0 translate-middle-y">
         </figure>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#bikes">Bikes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#garrafas">Garrafas</a>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
   <!-- header -->
-  <header class="">
+  <header>
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -83,9 +90,115 @@
       </button>
     </div>
   </header>
+  <main class="container-fluid row">
+    <!-- section das bikes -->
+    <section class="container">
+      <!-- Titulo Bikes -->
+      <div id="bikes" class="col-sm-12 d-flex justify-content-center">
+        <h1>Bikes</h1>
+      </div>
+      <!-- 1º Card - Road bike -->
+      <div class="d-flex bs-dark-text-emphasis">
+        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up-right" data-aos-easing="linear"
+          data-aos-duration="1500">
+          <img src="./css/image/speed bike.jpg" class="card-img-top imdg-fluid" alt="Bike speed(Road)">
+          <div class="card-body">
+            <h2>Road Bike</h2>
+            <p class="card-text">Bicicletas projetadas para velocidade e eficiência em estradas pavimentadas. Têm pneus
+              finos, quadro leve e uma posição de pilotagem inclinada para reduzir a resistência do ar.</p>
+            <a href="#" class="btn btn-primary">Compre Agora</a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <!-- 2º Card - Mountain Bike -->
+        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="./css/image/MTB 1.jpg_.webp" class="card-img-top" alt="mountain bike">
+          <div class="card-body">
+            <h2>Mountain Bike</h2>
+            <p class="card-text">Bicicletas robustas feitas para terrenos acidentados e trilhas off-road. Possuem pneus
+              largos e cravados, suspensão dianteira e/ou traseira e uma estrutura reforçada.</p>
+            <a href="#" class="btn btn-primary">Compre Agora</a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <!-- 3º Card - Hybrid Bike -->
+        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="./css/image/hybrid bike.webp" class="card-img-top img-fluid" alt="hybrid bike">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Hybrid Bike</h2>
+            Combinação de características das bicicletas de estrada e de montanha, projetada para versatilidade em
+            diferentes tipos de terreno. Ideal para passeios urbanos e trilhas leves.</p>
+            <a href="#" class="btn btn-primary">Compre Agora</a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <!-- 4º Card - Cruiser Bike -->
+        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up-left" data-aos-easing="linear"
+          data-aos-duration="1500">
+          <img src="./css/image/cruiser bike.jpeg" class="card-img-top img-fluid card-img" alt="cruiser bike">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Cruiser Bike</h2>
+            Bicicletas confortáveis e estilizadas, ideais para passeios tranquilos em terrenos planos. Possuem um design
+            clássico com assento largo e guidão alto.</p>
+            <a href="#" class="btn btn-primary card-botton">Compre Agora</a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </section>
+    <!-- section da garrafas -->
+    <section id="garrafas" class="my-5">
+      <div class="col-sm-12 d-flex justify-content-center">
+        <h1 class="my-5">Garrafas Sustentáveis</h1>
+      </div>
+      <div class="row d-flex justify-content-around align-items-center">
+        <!-- 1ª Garrafa -->
+        <div class="col-md-6 d-flex align-items-center mb-3" data-aos="fade-right">
+          <div class="d-flex align-items-center">
+            <img src="./css/image/Garrafa sus 1.jpeg" class="img-fluid rounded-circle me-3" alt="Garrafa 1"
+              style="width: 100px; height: 100px;">
+            <div>
+              <h5 class="card-title">Garrafa Eco-Friendly feita de bambu</h5>
+              <p class="card-text">Feita de materiais recicláveis, esta garrafa é perfeita para manter suas bebidas na
+                temperatura ideal enquanto cuida do meio ambiente.</p>
+              <a href="#" class="btn btn-primary">Compre Agora</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2ª Garrafa -->
+        <div class="col-md-6 d-flex align-items-center mb-3" data-aos="fade-left">
+          <div class="d-flex align-items-center">
+            <img src="./css/image/Garrafa sus 2.jpeg" class="img-fluid rounded-circle me-3" alt="Garrafa 1"
+              style="width: 100px; height: 100px;">
+            <div>
+              <h5 class="card-title">Garrafa Térmica Bamboo Ecológica Zen</h5>
+              <p class="card-text">Uma garrafa de água ecológica e sustentável feita de bambu</p>
+              <a href="#" class="btn btn-primary">Compre Agora</a>
+            </div>
+          </div>
+        </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+          <p class="mb-0">&copy; 2024 Power Of Free.</p><p>Todos os direitos reservados.</p><br>
+          <p class="mb-0">Desenvolvido por Abraão Lopes & Rafael lima</p>
+          <ul class="list-inline mt-2">
+            <li class="list-inline-item"><a target="_blank" href="../Política de Privacidade/index.html" class="text-light">Política de Privacidade</a></li>
+            <li class="list-inline-item"><a target="_blank" href="../Política de Privacidade/index.html" class="text-light">Termos de Uso</a></li>
+          </ul>
+        </div>
+      </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

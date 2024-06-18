@@ -20,5 +20,27 @@ nav {
 .logo {
     width: 10%;
 }
+/* header */
+/* Cards */
+.card-img {
+    margin-bottom: 12vh;
+}
+.card-botton {
+    margin-top: 3vh;
+}
+/* footer */
+footer {
+    border-top: 1px solid #555;
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
 
+  
 
