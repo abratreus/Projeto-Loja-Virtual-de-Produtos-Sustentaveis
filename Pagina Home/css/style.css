@@ -15,7 +15,10 @@
 /* Barra de Navegação */
 nav {
     background-color: #0CF25D;
-    max-height: 10vh;
 }
 /* logo */
+.logo {
+    width: 10%;
+}
+
 
