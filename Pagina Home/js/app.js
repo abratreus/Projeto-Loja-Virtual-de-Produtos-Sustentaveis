@@ -45,6 +45,7 @@ function clear() {
 }
 function clearModal() {
   document.getElementById('message-text').value = ""
+  alert("Mensagem enviada, espere 5 dias úteis")
 }
 
 // Adicionando Event Listener ao botão
@@ -71,7 +72,6 @@ if (exampleModal) {
     modalTitle.textContent = `New message to Support`
   }
   )
-  clearModal()
 }
 mss.addEventListener('click', clearModal)
 // alert

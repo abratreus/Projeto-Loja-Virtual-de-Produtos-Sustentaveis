@@ -40,16 +40,40 @@ nav {
     background-size: cover;
 }
 .pro-2 {
-    background-image: url(./image/Propaganda\ 2.jpg);
+    background-image: url(./image/pro-bike.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .pro-3 {
-    background-image: url(./image/Propaganda\ 3.jpg);
+    background-image: url(image/pro-bike3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.pro-4 {
+  background-image: url(./image/Propaganda\ 2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-5 {
+  background-image: url(./image/pro-bike2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-6 {
+  background-image: url(./image/Propaganda\ 3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-7 {
+  background-image: url(./image/pro-bike4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Cards */
 .card-img {
