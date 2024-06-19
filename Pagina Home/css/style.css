@@ -18,7 +18,7 @@ body {
 }
 /* Barra de Navegação */
 nav {
-    background-color: #0CF25D;
+  background: linear-gradient(90deg,#0CF25D,#0c4abd);
 }
 /* logo */
 .logo {
@@ -97,6 +97,8 @@ footer {
   footer ul li {
     display: inline;
     margin: 0 10px;
+    background: linear-gradient(90deg,#0CF25D,#1069bd);
+    border-radius: 10%;
   }
   .creditos {
     background-color: #212529;
@@ -123,6 +125,25 @@ footer {
     width: 100vh;
     height: 100vh;
 
+  }
+  .gradient {
+    background: linear-gradient(80deg,#0CF25D,#1069bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .box-gradient {
+    background: linear-gradient(80deg,#0CF25D,#1069bd);
+  }
+  /* botão de comprar */
+  .buy {
+    background: rgb(0,255,179);
+background: linear-gradient(90deg, rgba(0,255,179,1) 0%, rgba(8,238,34,1) 50%, rgba(0,255,179,1) 100%);
+    color: #000;
+  }
+  section img {
+    width: auto;
+    height: 40vh;
   }
 
 
