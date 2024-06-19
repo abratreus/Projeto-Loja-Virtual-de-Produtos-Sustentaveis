@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="my-5">
   <!-- Navegação -->
   <nav class="navbar fixed-top navbar-light">
     <div class="container-fluid">
@@ -28,13 +28,38 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
+            <a class="nav-link active" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">Perfil</a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div id="perfil" class="offcanvas-body">
+                <div>
+                  <h1>Cadastro</h1>
+                  <label for="username">Username</label><br>
+                  <input type="text" id="username"><br>
+                  <label for="email">Email</label><br>
+                  <input type="email" id="email"><br><br>
+                  <button id="button" class="btn btn-primary">Criar perfil</button>
+                </div>
+                <div class="d-none">
+
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#bikes">Bikes</a>
+            <a class="nav-link active" href="#bikes">Bikes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#garrafas">Garrafas</a>
+            <a class="nav-link active" href="#garrafas">Garrafas</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -45,7 +70,7 @@
     </div>
   </nav>
   <!-- header -->
-  <header>
+  <header class="container my-5">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -57,7 +82,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./css/image/Produtos sustentaveis.jfif" class="d-block w-100" alt="...">
+          <img src="./css/image/Produtos sustentaveis.jfif" class="d-block w-100" alt="Produtos sustentáveis">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
@@ -90,18 +115,18 @@
       </button>
     </div>
   </header>
-  <main class="container-fluid row">
+  <main class="container-fluid my-5">
     <!-- section das bikes -->
-    <section class="container">
+    <section class="container-fluid my-5">
       <!-- Titulo Bikes -->
-      <div id="bikes" class="col-sm-12 d-flex justify-content-center">
+      <div id="bikes" class="d-flex justify-content-center">
         <h1>Bikes</h1>
       </div>
-      <!-- 1º Card - Road bike -->
-      <div class="d-flex bs-dark-text-emphasis">
-        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up-right" data-aos-easing="linear"
+      <div class="container-fluid d-flex flex-wrap justify-content-around">
+        <!-- 1º Card - Road bike -->
+        <div class="card my-5 m-2" style="width: 18rem;" data-aos="fade-up-right" data-aos-easing="linear"
           data-aos-duration="1500">
-          <img src="./css/image/speed bike.jpg" class="card-img-top imdg-fluid" alt="Bike speed(Road)">
+          <img src="./css/image/speed bike.jpg" class="card-img-top img-fluid" alt="Bike speed(Road)">
           <div class="card-body">
             <h2>Road Bike</h2>
             <p class="card-text">Bicicletas projetadas para velocidade e eficiência em estradas pavimentadas. Têm pneus
@@ -109,9 +134,9 @@
             <a href="#" class="btn btn-primary">Compre Agora</a>
           </div>
         </div>
-        <div class="col-sm-1"></div>
         <!-- 2º Card - Mountain Bike -->
-        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="card my-5 m-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear"
+          data-aos-duration="1500">
           <img src="./css/image/MTB 1.jpg_.webp" class="card-img-top" alt="mountain bike">
           <div class="card-body">
             <h2>Mountain Bike</h2>
@@ -120,36 +145,32 @@
             <a href="#" class="btn btn-primary">Compre Agora</a>
           </div>
         </div>
-        <div class="col-sm-1"></div>
         <!-- 3º Card - Hybrid Bike -->
-        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="card my-5 m-2" style="width: 18rem;" data-aos="fade-up" data-aos-easing="linear"
+          data-aos-duration="1500">
           <img src="./css/image/hybrid bike.webp" class="card-img-top img-fluid" alt="hybrid bike">
           <div class="card-body">
-            <p class="card-text">
             <h2>Hybrid Bike</h2>
-            Combinação de características das bicicletas de estrada e de montanha, projetada para versatilidade em
-            diferentes tipos de terreno. Ideal para passeios urbanos e trilhas leves.</p>
+            <p class="card-text">Combinação de características das bicicletas de estrada e de montanha, projetada para
+              versatilidade em diferentes tipos de terreno. Ideal para passeios urbanos e trilhas leves.</p>
             <a href="#" class="btn btn-primary">Compre Agora</a>
           </div>
         </div>
-        <div class="col-sm-1"></div>
         <!-- 4º Card - Cruiser Bike -->
-        <div class="card col-sm-2" style="width: 18rem;" data-aos="fade-up-left" data-aos-easing="linear"
+        <div class="card my-5 m-2" style="width: 18rem;" data-aos="fade-up-left" data-aos-easing="linear"
           data-aos-duration="1500">
-          <img src="./css/image/cruiser bike.jpeg" class="card-img-top img-fluid card-img" alt="cruiser bike">
+          <img src="./css/image/cruiser bike.jpeg" class="card-img-top img-fluid" alt="cruiser bike">
           <div class="card-body">
-            <p class="card-text">
             <h2>Cruiser Bike</h2>
-            Bicicletas confortáveis e estilizadas, ideais para passeios tranquilos em terrenos planos. Possuem um design
-            clássico com assento largo e guidão alto.</p>
-            <a href="#" class="btn btn-primary card-botton">Compre Agora</a>
+            <p class="card-text">Bicicletas confortáveis e estilizadas, ideais para passeios tranquilos em terrenos
+              planos.</p>
+            <a href="#" class="btn btn-primary">Compre Agora</a>
           </div>
         </div>
-        <div class="col-sm-1"></div>
       </div>
     </section>
-    <!-- section da garrafas -->
-    <section id="garrafas" class="my-5">
+    <!-- section das garrafas -->
+    <section id="garrafas" class="my-5 my-5">
       <div class="col-sm-12 d-flex justify-content-center">
         <h1 class="my-5">Garrafas Sustentáveis</h1>
       </div>
@@ -160,38 +181,41 @@
             <img src="./css/image/Garrafa sus 1.jpeg" class="img-fluid rounded-circle me-3" alt="Garrafa 1"
               style="width: 100px; height: 100px;">
             <div>
-              <h5 class="card-title">Garrafa Eco-Friendly feita de bambu</h5>
-              <p class="card-text">Feita de materiais recicláveis, esta garrafa é perfeita para manter suas bebidas na
-                temperatura ideal enquanto cuida do meio ambiente.</p>
-              <a href="#" class="btn btn-primary">Compre Agora</a>
+              <h5 class="card-title">Garrafa Sustentável 1</h5>
+              <p class="card-text">Feita com materiais reciclados, esta garrafa é ideal para quem se preocupa com o meio
+                ambiente.</p>
             </div>
           </div>
         </div>
         <!-- 2ª Garrafa -->
         <div class="col-md-6 d-flex align-items-center mb-3" data-aos="fade-left">
           <div class="d-flex align-items-center">
-            <img src="./css/image/Garrafa sus 2.jpeg" class="img-fluid rounded-circle me-3" alt="Garrafa 1"
+            <img src="./css/image/Garrafa sus 2.jpeg" class="img-fluid rounded-circle me-3" alt="Garrafa 2"
               style="width: 100px; height: 100px;">
             <div>
-              <h5 class="card-title">Garrafa Térmica Bamboo Ecológica Zen</h5>
-              <p class="card-text">Uma garrafa de água ecológica e sustentável feita de bambu</p>
-              <a href="#" class="btn btn-primary">Compre Agora</a>
+              <h5 class="card-title">Garrafa Sustentável 2</h5>
+              <p class="card-text">Projetada para durabilidade e reutilização, ajudando a reduzir o consumo de plástico
+                descartável.</p>
             </div>
           </div>
         </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer class="bg-dark text-light text-center py-3">
-        <div class="container">
-          <p class="mb-0">&copy; 2024 Power Of Free.</p><p>Todos os direitos reservados.</p><br>
-          <p class="mb-0">Desenvolvido por Abraão Lopes & Rafael lima</p>
-          <ul class="list-inline mt-2">
-            <li class="list-inline-item"><a target="_blank" href="../Política de Privacidade/index.html" class="text-light">Política de Privacidade</a></li>
-            <li class="list-inline-item"><a target="_blank" href="../Política de Privacidade/index.html" class="text-light">Termos de Uso</a></li>
-          </ul>
-        </div>
-      </footer>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="bg-dark text-light text-center py-3 my-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Power Of Free.</p>
+      <p>Todos os direitos reservados.</p><br>
+      <p class="mb-0">Desenvolvido por Abraão Lopes & Rafael lima</p>
+      <ul class="list-inline mt-2">
+        <li class="list-inline-item"><a target="_blank" href="../Política de Privacidade/index.html"
+            class="text-light">Política de Privacidade</a></li>
+        <li class="list-inline-item"><a target="_blank" href="../Termos de uso/index.html" class="text-light">Termos de
+            Uso</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>

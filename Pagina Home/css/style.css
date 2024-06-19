@@ -4,6 +4,10 @@
     padding: 0;
     font-family: cursive;
 }
+/* body */
+body {
+    overflow-x: hidden;
+}
 /* Variaveis das Cores */
 :root {
     --color: #034159;
@@ -25,7 +29,10 @@ nav {
 .card-img {
     margin-bottom: 12vh;
 }
-.card-botton {
+.card-button {
+    margin-top: 6.7vh;
+}
+.card-button1 {
     margin-top: 3vh;
 }
 /* footer */
@@ -41,6 +48,11 @@ footer {
     display: inline;
     margin: 0 10px;
   }
+  /* utilits */
+  .borda {
+    border: 1px solid blue;
+  }
+
 
   
 
