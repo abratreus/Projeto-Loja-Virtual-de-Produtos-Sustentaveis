@@ -1,24 +1,69 @@
-let btn = document.getElementById("button")
-let div = document.getElementById("perfil")
+// Obtendo as referências às divs e ao botão
+let btn = document.getElementById("liveAlertBtn");
+let div = document.getElementById("perfil");
+let cad = document.getElementById("cadastro");
+let mss = document.getElementById("message");
 
-function cadastrar(){
-  let nome = document.getElementById("username")
-  let email = document.getElementById("email")
-  if (nome==""||" "||nome.length<=3||IsEmail(email)==false){
-    alert("Escreva um Nome ou um Email válido")
+function imprimir() {
+  let nome = document.getElementById('username').value;
+  let email = document.getElementById("email").value;
+
+  // Adiciona a classe 'd-none' à div de cadastro e remove da div de perfil
+  cad.classList.add('d-none');
+  div.classList.remove('d-none');
+
+  // Atualiza o conteúdo da div de perfil
+  div.innerHTML = `
+    <label>Username:</label><br>
+    <h2>${nome}</h2><br>
+
+    <label for="email">Email:</label><br>
+
+    <h2>${email}</h2>
+
+  `
+}
+
+// Função de validação de e-mail
+const validacaodoemail = (email) => {
+  let validacao = /\S+@\S+\.\S+/;
+  return validacao.test(email);
+};
+
+// Função para limpar os campos
+function clear() {
+  document.getElementById("username").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("username").focus();
+}
+function clearModal(){
+  document.getElementById('message-text').value=""
+}
+
+// Adicionando Event Listener ao botão
+btn.addEventListener('click', function (event) {
+  let email = document.getElementById("email").value;
+  let respostaEmail = validacaodoemail(email);
+
+  if (respostaEmail) {
+    imprimir();
+    clear();
+  } else {
+    alert('e-mail inválido');
   }
-}
-function inprimir(){
+  event.preventDefault();
+});
+// modal
+const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
 
-}
-function error(){
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
 
+    modalTitle.textContent = `New message to Support`
+  }
+)
+clearModal()
 }
-function IsEmail(email){
-  let exclude=/[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
-  let check=/@[w-]+./;
-  let checkend=/.[a-zA-Z]{2,3}$/;
-  if(((email.search(exclude) != -1)||(email.search(check)) == -1)||(email.search(checkend) == -1)){return false;}
-  else {return true;}
-}
-btn.addEventListener('click', cadastrar)
+mss.addEventListener('click', clearModal)

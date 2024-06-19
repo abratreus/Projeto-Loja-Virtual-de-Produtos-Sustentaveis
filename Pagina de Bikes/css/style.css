@@ -25,42 +25,8 @@ nav {
     width: 10%;
 }
 /* menu */
-.campo {
-    background-color: var(--color0);
-}
 /* header */
-.header {
-    width: 100vh;
-    height: 100vh;
-}
-.pro-1 {
-    background-image: url(./image/Propaganda\ 1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pro-2 {
-    background-image: url(./image/Propaganda\ 2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pro-3 {
-    background-image: url(./image/Propaganda\ 3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /* Cards */
-.card-img {
-    margin-bottom: 12vh;
-}
-.card-button {
-    margin-top: 6.7vh;
-}
-.card-button1 {
-    margin-top: 3vh;
-}
 /* footer */
 footer {
     border-top: 1px solid #555;
