@@ -7,6 +7,10 @@ let mss = document.getElementById("message");
 function imprimir() {
   let nome = document.getElementById('username').value;
   let email = document.getElementById("email").value;
+  localStorage.setItem('username', nome);
+  localStorage.setItem('email', email);
+
+
 
   // Adiciona a classe 'd-none' à div de cadastro e remove da div de perfil
   cad.classList.add('d-none');
@@ -14,14 +18,17 @@ function imprimir() {
 
   // Atualiza o conteúdo da div de perfil
   div.innerHTML = `
+    <h1>Perfil</h1>
+    <a target="_blank" href="../Pagina do Perfil/index.html" class="text-decoration-none text-reset"><h5 class="font-monospace">Ver Pagina do Perfil</h5></a>
     <label>Username:</label><br>
-    <h2>${nome}</h2><br>
+    <h5>${nome}</h5><br>
 
     <label for="email">Email:</label><br>
 
-    <h2>${email}</h2>
+    <h5>${email}</h5>
 
   `
+  
 }
 
 // Função de validação de e-mail
@@ -36,8 +43,8 @@ function clear() {
   document.getElementById("email").value = "";
   document.getElementById("username").focus();
 }
-function clearModal(){
-  document.getElementById('message-text').value=""
+function clearModal() {
+  document.getElementById('message-text').value = ""
 }
 
 // Adicionando Event Listener ao botão
@@ -63,7 +70,28 @@ if (exampleModal) {
 
     modalTitle.textContent = `New message to Support`
   }
-)
-clearModal()
+  )
+  clearModal()
 }
 mss.addEventListener('click', clearModal)
+// alert
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('E-mail inválido. Por favor, insira um e-mail válido.', 'danger');
+  })
+}
+// perfil

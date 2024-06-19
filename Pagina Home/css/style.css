@@ -84,6 +84,22 @@ footer {
   .none {
     display: none;
   }
+  .perfil {
+    background-image: url(./image/download.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+  .perfil-container {
+    background-color: var(--color1);
+    border-radius: 10%;
+
+    width: 100vh;
+    height: 100vh;
+
+  }
 
 
   
