@@ -22,7 +22,8 @@ nav {
 }
 /* logo */
 .logo {
-    width: 10%;
+    width: 20vh;
+    height: auto;
 }
 /* menu */
 .campo {
@@ -85,15 +86,24 @@ nav {
 .card-button1 {
     margin-top: 3vh;
 }
-/* footer */
+/* Footer minimalista */
 footer {
-    border-top: 1px solid #555;
-  }
-  
-  footer ul {
-    padding: 0;
-  }
-  
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
+footer a.text-reset {
+  color: #6c757d;
+}
+
+footer a.text-reset:hover {
+  color: #343a40;
+}
   footer ul li {
     display: inline;
     margin: 0 10px;

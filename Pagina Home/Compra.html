@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação de Compra</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- Navegação -->
+  <nav class="navbar fixed-top navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler me-auto d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-icon"></div>
+        <span class="logo">
+            <a class="nav-link active " aria-current="page" href="index.html"> 
+                <figure>
+                  <img src="./css/image/logo_projeto-removebg-preview-removebg-preview.png" alt="logo-lampada"
+                    class="logo">
+                </figure>
+              </a>
+        </span>
+      </button>
+    <a class="nav-link active" href="Sobre.html"><i class="bi bi-c-circle"></i> - Créditos</a></div>
+</div>
+  </nav>
+
+  <!-- Header -->
+  <header class="container mt-5 pt-5">
+    <div class="container-fluid text-center">
+      <h1 class="my-5 gradient">Simulação de Compra</h1>
+      <p class="lead">Preencha as informações abaixo para simular a compra de um produto.</p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container my-5">
+    <section class="container">
+      <h2>Informações do Produto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="productName" class="form-label"><h5>Nome do Produto:</h5></label><br>
+            Garrafe ou Bike
+        </div>
+        <div class="mb-3">
+          <label for="productQuantity" class="form-label">Quantidade</label>
+          <input type="number" class="form-control" id="productQuantity" required>
+        </div>
+        <div class="mb-3">
+          <label for="customerName" class="form-label">Nome do Cliente</label>
+          <input type="text" class="form-control" id="customerName" required>
+        </div>
+        <div class="mb-3">
+          <label for="customerEmail" class="form-label">Email do Cliente</label>
+          <input type="email" class="form-control" id="customerEmail" required>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="alert('Compra feita')">Simular Compra</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-3 bg-light">
+    <div class="container">
+      <p class="mb-0">© 2023 Power Of Free. Todos os direitos reservados.</p>
+      <p class="mb-0">Desenvolvido por: Abraão&Rafael</p>
+      <div>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="" class="me-2 text-reset">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
