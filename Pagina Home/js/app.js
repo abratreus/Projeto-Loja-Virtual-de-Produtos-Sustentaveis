@@ -94,4 +94,3 @@ if (alertTrigger) {
     appendAlert('E-mail inválido. Por favor, insira um e-mail válido.', 'danger');
   })
 }
-// perfil
