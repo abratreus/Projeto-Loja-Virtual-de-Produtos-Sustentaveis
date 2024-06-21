@@ -19,7 +19,7 @@ function imprimir() {
   // Atualiza o conteúdo da div de perfil
   div.innerHTML = `
     <h1>Perfil</h1>
-    <a target="_blank" href="../Pagina do Perfil/index.html" class="text-decoration-none text-reset"><h5 class="font-monospace">Ver Pagina do Perfil</h5></a>
+    <a target="_blank" href="./Pagina do Perfil/index.html" class="text-decoration-none text-reset"><h5 class="font-monospace">Ver Pagina do Perfil</h5></a>
     <label>Username:</label><br>
     <h5>${nome}</h5><br>
 
